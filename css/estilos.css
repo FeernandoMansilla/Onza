@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.padreNavHeader{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    background-color: grey;
+}
+
+.contenedorLogo{
+    width: 100px;
+}
+.contenedorLogo a img{
+    width: 100%;
+}
+
+.listaNav{
+    list-style: none;
+}
+.listaItem{
+    display: inline-block;
+    padding-right: 1rem;
+}
+.listaItem a {
+    text-decoration: none;
+    color: green;
+}
