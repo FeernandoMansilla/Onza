@@ -1,33 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Outfit:wght@100;200;300;400;500;600&family=Playfair+Display:ital@0;1&display=swap');
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
-.padreNavHeader{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-left: 3rem;
-    padding-right: 3rem;
-    background-color: grey;
+body {
+    font-family: 'Outfit', sans-serif;
 }
-
-.contenedorLogo{
-    width: 100px;
+.bgGreey{
+    background-color: greenyellow;
 }
-.contenedorLogo a img{
+.carousel-item{
     width: 100%;
+    height: 60vh;
+}
+.carousel-item img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
-.listaNav{
-    list-style: none;
+@media screen and (min-width:0px) and (max-width: 768px) {
+    .carousel-item{
+        height: 40vh;
+    }
+    .carousel-item img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
 }
-.listaItem{
-    display: inline-block;
-    padding-right: 1rem;
+.contenedorTituloPrincipal h1{
+    font-size: 3rem;
+    margin-bottom: 3rem;
+    text-align: center;
 }
-.listaItem a {
-    text-decoration: none;
-    color: green;
+.contenedorTituloPrincipal h2{
+    text-align: center;
+}
+.bi-instagram{
+    font-size: 20px;
+    color: red;
+}
+.bi-facebook{
+    font-size: 20px;
+}
+.bi-whatsapp{
+    font-size: 20px;
+    color: rgb(1, 218, 1);
 }
