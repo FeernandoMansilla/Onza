@@ -11,6 +11,9 @@
 body {
     font-family: 'Outfit', sans-serif;
 }
+header {
+    margin-bottom: 20px;
+}
 .bgGreey{
     background-color: greenyellow;
 }
@@ -23,7 +26,10 @@ body {
     height: 100%;
     object-fit: cover;
 }
-
+.navbar-brand img {
+    height: 50px;
+    width: auto;
+  }
 @media screen and (min-width:0px) and (max-width: 768px){
     .carousel-item{
         height: 40vh;
@@ -34,6 +40,10 @@ body {
         object-fit: cover;
     }
 
+}
+main {
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 .contenedorTituloPrincipal h1{
     font-size: 3rem;
@@ -53,11 +63,14 @@ body {
         align-items: center;
         height: 50vh
 }
+
 .bi-instagram{
+    padding-right: 10px;
     font-size: 20px;
     color: rgb(255, 0, 55);
 }
 .bi-facebook{
+    padding-right: 10px;
     font-size: 20px;
 }
 .bi-whatsapp{
