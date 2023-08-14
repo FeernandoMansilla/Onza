@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Outfit:wght@100;200;300;400;500;600&family=Playfair+Display:ital@0;1&display=swap');
+
+// Variables de Colores
+$color-primary: #007bff;
+$color-secondary: #6c757d;
+$color-accent: #ff9900;
+$color-gradient-start: green; // Definir el color de inicio del gradiente
+$color-gradient-end: yellow;  // Definir el color de fin del gradiente
+$color-instagram: rgb(255, 0, 55);
+$color-facebook: #1877f2;
+$color-whatsapp: rgb(1, 218, 1);
+
+// Variables de Tipografía
+$font-family-primary: 'Outfit', sans-serif;
+$font-family-heading: 'Playfair Display', serif;
+
+@mixin rotate-icon {
+  display: inline-block;
+  font-size: 24px;
+  margin-right: 10px;
+  color: #fff;
+  transition: transform 0.3s ease;
+
+  &:hover {
+    transform: rotate(360deg);
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $font-family-primary;
+}
+
+header {
+  margin-bottom: 20px;
+}
+
+.bgGreey {
+  background: linear-gradient(to right, $color-gradient-start, $color-gradient-end);
+}  
+
+.carousel-item {
+  width: 100%;
+  height: 60vh;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.navbar-brand img {
+  height: 50px;
+  width: auto;
+}
+
+@media screen and (min-width: 0px) and (max-width: 768px) {
+  .carousel-item {
+    height: 40vh;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+}
+
+main {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.contenedorTituloPrincipal {
+  h1 {
+    font-size: 3rem;
+    margin-bottom: 3rem;
+    text-align: center;
+  }
+
+  h2 {
+    text-align: center;
+  }
+}
+
+.container {
+  h3 {
+    text-align: center;
+  }
+}
+
+.map-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+}
+
+.text-center {
+  a {
+    @include rotate-icon;
+    
+    .bi-instagram {
+      color: $color-instagram;
+    }
+    
+    .bi-facebook {
+      color: $color-facebook;
+    }
+    
+    .bi-whatsapp {
+      color: $color-whatsapp;
+    }
+  }
+}
+
+.banner {
+  /* Estilos personalizados para el banner */
+  background-color: #141111;
+  padding: 20px;
+  text-align: center;
+}
